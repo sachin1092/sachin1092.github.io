@@ -1,0 +1,87 @@
+ul.contact {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	-webkit-padding-start: 0
+}
+ul.contact li {
+	display: inline-block;
+	margin: 0 10px
+}
+ul.contact li a {
+	color: grey
+}
+ul.contact li a img {
+	height: 50px;
+	width: 50px
+}
+#pfacebook:hover #facebook {
+	fill: #3b5998;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pfacebook #facebook {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pandroid:hover #android {
+	fill: #a4c639;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pandroid #android {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#agog:hover #gog {
+	fill: #da4835;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#agog #gog {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pmail:hover #mail {
+	fill: #ebc411;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pmail #mail {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#ptwitter:hover #twitter {
+	fill: #55acee;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#ptwitter #twitter {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pgit:hover #git {
+	fill: #000;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#pgit #git {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#plinkedin:hover #linkedin {
+	fill: #1060A5;
+	transition-property: fill;
+	transition-duration: 1s
+}
+#plinkedin #linkedin {
+	fill: #fff;
+	transition-property: fill;
+	transition-duration: 1s
+}
