@@ -35,17 +35,16 @@ export default class extends Component {
 			height: '250px',
 			border: '2px solid #87cefa',
 			marginTop: '4%',
-			marginBottom: '4%',
-			textAlign: 'center'
+			marginBottom: '4%'
 		}
 
 		const root_style = {
 			backgroundColor: '#EEEEEE',
 			width: '100%',
 			height: '100%',
-			padding: '10px',
+			textAlign: 'center',
 			fontFamily: 'Lato',
-			fontSize: '5vw'
+			fontSize: '1.5em'
 		}
 
 		const colored = {
