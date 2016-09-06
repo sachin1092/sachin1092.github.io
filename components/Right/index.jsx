@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AnimatedText from 'animatedtext';
-import { loadSVG, MODULE } from 'svg_loader';
+import SVGLoader from 'svgloader';
 // import facebook from 'right/facebook.svg';
 // import android from 'right/android.svg';
 // import git from 'right/git.svg';
@@ -15,7 +15,6 @@ export default class extends Component {
 		super();
 		this.state = {
 		};
-		console.log(loadSVG(MODULE.FACEBOOK));
 	}
 
 	componentDidMount() {
@@ -33,7 +32,7 @@ export default class extends Component {
 	}
 
 	render() {
-		// console.log(require(facebook));
+
 		const img_style = {
 			borderRadius: '50% 50% 50% 50%',
 			width: '250px',
@@ -44,7 +43,6 @@ export default class extends Component {
 		}
 
 		const root_style = {
-			backgroundColor: '#EEEEEE',
 			width: '100%',
 			height: '100%',
 			textAlign: 'center',
@@ -64,13 +62,28 @@ export default class extends Component {
 				<ul className="contact">
 					<li>
 						<a id="pfacebook" target="blank" href="https://www.facebook.com/sachin.shinde2">
-						<img src={facebook} />
+							<SVGLoader value={"facebook"}/>
 						</a>
 					</li>
 					<li>
 						<a id="pandroid" target="blank"
 						href="http://play.google.com/store/apps/developer?id=sachin+shinde">
-						<img id="android" src={android} />
+							<SVGLoader value={"android"}/>
+						</a>
+					</li>
+					<li>
+						<a id="pgit" target="blank" href="https://github.com/sachin1092/">
+							<SVGLoader value={"git"}/>
+						</a>
+					</li>
+					<li>
+						<a id="plinkedin" target="blank" href="http://in.linkedin.com/in/sachin1092">
+							<SVGLoader value={"linkedin"}/>
+						</a>
+					</li>
+					<li>
+						<a id="pmail" target="blank" href="mailto:me@sachinshinde.com">
+							<SVGLoader value={"mail"}/>
 						</a>
 					</li>
 				</ul>

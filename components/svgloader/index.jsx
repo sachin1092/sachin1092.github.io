@@ -1,9 +1,6 @@
 
 import React from 'react';
 
-import 'status/style.css';
-
-// these status types match up with css classnames included in this component
 const SvgType = {
 	GIT: "git",
 	ANDROID: "android",
@@ -12,12 +9,21 @@ const SvgType = {
 	LINKEDIN: "linkedin"
 }
 
-const getSVG = ({svg}) = {
-	switch (svg) {
+export default ({ value }) => {
+	let item = getSVG(value);
+	return (
+		<div>
+			{item}
+		</div>
+		);
+}
+
+const getSVG = (value) => {
+	switch (value) {
 		case SvgType.GIT:
 			return (
 				<svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-																width="50px" height="50px" viewBox="6 6 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
+																width="50px" height="50px" viewBox="6 6 38 38" enableBackground="new 0 0 38 38">
 					<path id="git" d="M31.052,42.029c-0.172,0.063-0.345,0.137-0.523,0.168c-0.678,0.121-1.112-0.229-1.116-0.922
 							c-0.009-1.287-0.009-2.572,0.012-3.859c0.022-1.481-0.012-2.942-1.139-4.162c0.67-0.12,1.266-0.204,1.849-0.338
 							c3.862-0.887,5.868-3.323,6.124-7.366c0.13-2.059-0.237-3.947-1.604-5.568c-0.099-0.114-0.103-0.373-0.057-0.539
@@ -43,9 +49,8 @@ const getSVG = ({svg}) = {
 				);
 		case SvgType.ANDROID:
 			return (
-				<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-				<svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100" enable-background="new 0 255 255 255" xml:space="preserve">
-					<g id="android" class="android" fill="#ffffff">
+				<svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100" enableBackground="new 0 255 255 255" >
+					<g id="android" className="android" fill="#ffffff">
 							 <path d="M17.361,34.088c-1.557,0-2.878,0.543-3.964,1.629c-1.086,1.086-1.629,2.389-1.629,3.91v23.352		c0,1.559,0.543,2.879,1.629,3.965c1.086,1.086,2.407,1.629,3.964,1.629c1.556,0,2.869-0.543,3.938-1.629		c1.067-1.086,1.602-2.406,1.602-3.965V39.627c0-1.521-0.543-2.824-1.629-3.91S18.882,34.088,17.361,34.088z"/>
 							 <path d="M62.328,13.125l3.856-7.113c0.253-0.471,0.163-0.832-0.271-1.086c-0.471-0.219-0.833-0.108-1.086,0.325l-3.91,7.17		c-3.44-1.521-7.079-2.283-10.916-2.283c-3.838,0-7.477,0.762-10.916,2.283l-3.91-7.17c-0.254-0.433-0.616-0.543-1.086-0.325		c-0.435,0.255-0.525,0.615-0.271,1.086l3.856,7.113c-3.91,1.994-7.024,4.771-9.341,8.337c-2.317,3.568-3.476,7.467-3.476,11.704		H75.09c0-4.236-1.159-8.135-3.476-11.704C69.297,17.896,66.201,15.119,62.328,13.125z M40.035,23.471		c-0.417,0.418-0.915,0.626-1.494,0.626c-0.58,0-1.068-0.208-1.466-0.626c-0.398-0.416-0.597-0.912-0.597-1.493		c0-0.579,0.199-1.076,0.597-1.493c0.398-0.416,0.887-0.624,1.466-0.624c0.579,0,1.077,0.208,1.494,0.624		c0.416,0.418,0.625,0.914,0.625,1.493C40.659,22.558,40.45,23.055,40.035,23.471z M62.925,23.471		c-0.399,0.418-0.888,0.626-1.466,0.626c-0.58,0-1.078-0.208-1.494-0.626c-0.417-0.416-0.625-0.912-0.625-1.493		c0-0.579,0.208-1.076,0.625-1.493c0.416-0.416,0.914-0.624,1.494-0.624c0.579,0,1.067,0.208,1.466,0.624		c0.398,0.418,0.597,0.914,0.597,1.493C63.522,22.558,63.323,23.055,62.925,23.471z"/>
 							 <path d="M25.073,71.288c0,1.667,0.579,3.078,1.737,4.236c1.159,1.158,2.57,1.737,4.236,1.737h4.019L35.12,89.59		c0,1.557,0.543,2.879,1.629,3.965c1.086,1.086,2.39,1.629,3.91,1.629c1.556,0,2.878-0.543,3.964-1.629		c1.086-1.086,1.629-2.408,1.629-3.965V77.262h7.494V89.59c0,1.557,0.543,2.879,1.629,3.965c1.086,1.086,2.407,1.629,3.964,1.629		c1.556,0,2.878-0.543,3.964-1.629c1.086-1.086,1.629-2.408,1.629-3.965V77.262h4.073c1.629,0,3.022-0.579,4.182-1.737		c1.158-1.158,1.737-2.569,1.737-4.236V35.119H25.073V71.288z"/>
@@ -55,12 +60,12 @@ const getSVG = ({svg}) = {
 				);
 		case SvgType.FACEBOOK:
 			return (
-				<svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path id="facebook" class="facebook" fill="#ffffff" d="M74.986,17.86l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.005,17.106H57.451v43.894H39.784V54.219 h-14.77V37.113h14.77V24.499c0-14.64,8.943-22.612,22.003-22.612l13.2,0.021V17.86z"/></svg>
+				<svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100" enableBackground="new 0 0 100 100"><path id="facebook" className="facebook" fill="#ffffff" d="M74.986,17.86l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.005,17.106H57.451v43.894H39.784V54.219 h-14.77V37.113h14.77V24.499c0-14.64,8.943-22.612,22.003-22.612l13.2,0.021V17.86z"/></svg>
 				);
 		case SvgType.MAIL:
 			return (
-				<svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"   width="50px" height="50px" viewBox="0 0 14 10" enable-background="new 0 0 14 10" xml:space="preserve">
-				  <g id="mail" class="mail" fill="#FFFFFF">
+				<svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"   width="50px" height="50px" viewBox="0 0 14 10" enableBackground="new 0 0 14 10" >
+				  <g id="mail" className="mail" fill="#FFFFFF">
 					<path  d="M7,7L5.268,5.484L0.316,9.729C0.496,9.896,0.739,10,1.007,10h11.986c0.267,0,0.509-0.104,0.688-0.271L8.732,5.484L7,7z"/>
 					<path d="M13.684,0.271C13.504,0.103,13.262,0,12.993,0H1.007C0.74,0,0.498,0.104,0.318,0.273L7,6L13.684,0.271z"/>
 					<polygon points="0,0.878 0,9.186 4.833,5.079  "/>
@@ -71,8 +76,8 @@ const getSVG = ({svg}) = {
 		case SvgType.LINKEDIN:
 			return (
 				<svg  version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-													 width="50px" height="50px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-					<path class="linkedin" id="linkedin" fill="#ffffff" d="M92,3H8C5.239,3,3,5.239,3,8v84c0,2.761,2.239,5,5,5h84c2.761,0,5-2.239,5-5V8C97,5.239,94.761,3,92,3z M29.414,87.201
+													 width="50px" height="50px" viewBox="0 0 100 100" enableBackground="new 0 0 100 100">
+					<path className="linkedin" id="linkedin" fill="#ffffff" d="M92,3H8C5.239,3,3,5.239,3,8v84c0,2.761,2.239,5,5,5h84c2.761,0,5-2.239,5-5V8C97,5.239,94.761,3,92,3z M29.414,87.201
 						H13.966V37.503h15.447V87.201z M21.693,30.71c-4.951,0-8.959-4.013-8.959-8.958c0.001-4.938,4.01-8.952,8.959-8.952
 						c4.939,0,8.951,4.012,8.951,8.952C30.644,26.697,26.632,30.71,21.693,30.71z M87.266,87.2H71.832V63.033
 						c0-5.764-0.106-13.178-8.029-13.178c-8.034,0-9.268,6.278-9.268,12.759V87.2H39.099V37.503h14.816v6.79h0.207
@@ -81,5 +86,3 @@ const getSVG = ({svg}) = {
 				)
 	}
 }
-
-export { getSvg, StatusType }

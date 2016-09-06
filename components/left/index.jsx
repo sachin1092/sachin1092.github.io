@@ -39,12 +39,12 @@ export default class extends Component {
 		}
 
 		const root_style = {
-			backgroundColor: '#EEEEEE',
 			width: '100%',
 			height: '100%',
 			textAlign: 'center',
 			fontFamily: 'Lato',
-			fontSize: '1.5em'
+			fontSize: '1.5em',
+			color: '#fff'
 		}
 
 		const colored = {

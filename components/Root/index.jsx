@@ -5,6 +5,7 @@ import Right from 'right';
 
 export default ({ title, icon, gradient, direction }) => {
 	let root = {
+		background: '#1f1f1f',
 		display: 'flex',
 		flexDirection: 'row',
 	};
