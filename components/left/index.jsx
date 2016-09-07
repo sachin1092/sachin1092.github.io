@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AnimatedText from 'animatedtext';
-import image from 'root/me.jpg'
+import image from 'left/me.jpg'
 
 const texts = ["Student", "Passionate Programmer", "Linux Lover", "Software Engineer", "Gamer"];
 
@@ -39,8 +39,6 @@ export default class extends Component {
 		}
 
 		const root_style = {
-			width: '100%',
-			height: '100%',
 			textAlign: 'center',
 			fontFamily: 'Lato',
 			fontSize: '1.5em',
@@ -51,14 +49,15 @@ export default class extends Component {
 			color: '#87cefa',
 			fontStyle: 'italic',
 			borderBottom: '1px dotted #87cefa',
-			textDecoration: 'none'
+			textDecoration: 'none',
+			textAlign: 'left'
 		}
 
         return (
         	<div style={root_style}>
         		<img src={image} style={img_style}/>
         		<h2>Hi there!</h2><div>I am Sachin</div>
-        		<div>I am a <AnimatedText style={colored} ease={"sineIn"} type={"string"} value={texts[this.state.textIndex]} speed={1000}/></div>
+        		<div>I am a...<br/><AnimatedText style={colored} ease={"sineIn"} type={"string"} value={texts[this.state.textIndex]} speed={600}/></div>
         	</div>
         )
     }

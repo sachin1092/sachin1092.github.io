@@ -33,21 +33,11 @@ export default class extends Component {
 
 	render() {
 
-		const img_style = {
-			borderRadius: '50% 50% 50% 50%',
-			width: '250px',
-			height: '250px',
-			border: '2px solid #87cefa',
-			marginTop: '4%',
-			marginBottom: '4%'
-		}
-
 		const root_style = {
-			width: '100%',
-			height: '100%',
 			textAlign: 'center',
 			fontFamily: 'Lato',
-			fontSize: '1.5em'
+			fontSize: '1.5em',
+			overflow: 'scroll'
 		}
 
 		const colored = {
@@ -55,6 +45,11 @@ export default class extends Component {
 			fontStyle: 'italic',
 			borderBottom: '1px dotted #87cefa',
 			textDecoration: 'none'
+		}
+
+		const dotted_line = {
+			borderBottom: '1px dotted #fff',
+			margin: '1px 50px 1px 50px'
 		}
 
 		return (
@@ -87,6 +82,9 @@ export default class extends Component {
 						</a>
 					</li>
 				</ul>
+
+
+				<div style={dotted_line}/>
 			</div>
 		)
 	}

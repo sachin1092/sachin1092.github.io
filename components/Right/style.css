@@ -2,7 +2,7 @@ ul.contact {
 	list-style: none;
 	text-align: center;
 	padding: 0;
-	-webkit-padding-start: 0
+	-webkit-padding-start: 0;
 }
 ul.contact li {
 	display: inline-block;
