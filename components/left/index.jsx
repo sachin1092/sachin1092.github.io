@@ -58,6 +58,16 @@ export default class extends Component {
         		<img src={image} style={img_style}/>
         		<h2>Hi there!</h2><div>I am Sachin</div>
         		<div>I am a...<br/><AnimatedText style={colored} ease={"sineIn"} type={"string"} value={texts[this.state.textIndex]} speed={600}/></div>
+        		<br/>
+        		<br/>
+        		<div style={{padding: '15px', fontSize: '0.8em'}}>
+	        		<em>
+	        			"Around here, however, we don't look backwards for very long.
+	        			We <span style={{color: '#87cefa'}}><b>Keep Moving Forward</b></span>, opening up new doors and doing new things,
+	        			because we're curious... and curiosity keeps leading us down new paths."
+	        			<br/><span style={{float: 'right', marginRight: '10px'}}>— Walt Disney</span>
+	        		</em>
+        		</div>
         	</div>
         )
     }

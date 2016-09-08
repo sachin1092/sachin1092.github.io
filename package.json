@@ -16,6 +16,7 @@
     "moment": "^2.14.1",
     "nuka-carousel": "^2.0.3",
     "path": "^0.12.7",
+    "rc-collapse": "^1.6.6",
     "react": "^15.1.0",
     "react-addons-css-transition-group": "^15.3.1",
     "react-dom": "^15.1.0",
@@ -46,6 +47,10 @@
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sachin1092/sachin1092.github.io"
   },
   "babel": {
     "presets": [

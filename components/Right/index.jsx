@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import AnimatedText from 'animatedtext';
 import SVGLoader from 'svgloader';
-// import facebook from 'right/facebook.svg';
-// import android from 'right/android.svg';
-// import git from 'right/git.svg';
-// import linkedin from 'right/linkedin.svg';
-// import mail from 'right/mail.svg';
+import Collapse, { Panel } from 'rc-collapse';
 
 import 'right/style.css'
 
@@ -17,18 +13,10 @@ export default class extends Component {
 		};
 	}
 
-	componentDidMount() {
-		// this.changeInterval = setInterval(() => {
-		// 	let index = this.state.textIndex;
-		// 	index = (index + 1) % texts.length;
-		// 	this.setState({
-		// 		textIndex: index
-		// 	});
-		// }, 2000);     
+	componentDidMount() {  
 	}
 
-	componentWillUnmount() {
-		// clearInterval(this.changeInterval);     
+	componentWillUnmount() {   
 	}
 
 	render() {
@@ -85,6 +73,19 @@ export default class extends Component {
 
 
 				<div style={dotted_line}/>
+
+				<Collapse
+		        accordion={true}
+		        onChange={() => {}}
+		      	>
+		        <Panel header={`Work`} key={"1"}>
+		          <p>{"Hello World"}</p>
+		        </Panel>
+		        <Panel header={`Education`} key={"2"}>
+		          <p>{"Hello World"}</p>
+		        </Panel>
+		      	</Collapse>
+
 			</div>
 		)
 	}
