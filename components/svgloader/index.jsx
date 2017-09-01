@@ -9,13 +9,26 @@ const SvgType = {
 	LINKEDIN: "linkedin"
 }
 
-export default ({ value }) => {
-	let item = getSVG(value);
-	return (
-		<div>
-			{item}
-		</div>
-		);
+export default class extends React.Component {
+
+	constructor() {
+		super();
+		this.state = {
+			value: "NULL"
+		}; 
+	}
+	
+	componentDidMount() {
+		this.setState({value: this.props.value});
+    	}
+
+	render() {
+		return (
+			<div>
+				{getSVG(this.state.value)}
+			</div>
+			);
+	}
 }
 
 const getSVG = (value) => {
@@ -83,6 +96,8 @@ const getSVG = (value) => {
 						c0-5.764-0.106-13.178-8.029-13.178c-8.034,0-9.268,6.278-9.268,12.759V87.2H39.099V37.503h14.816v6.79h0.207
 						c2.063-3.907,7.102-8.027,14.614-8.027c15.641,0,18.529,10.294,18.529,23.674V87.2z"/>
 				</svg>
-				)
+				);
+		default:
+			return (<svg/>);
 	}
 }

@@ -1,11 +1,12 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import eases from 'eases';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'animatedtext/style.css';
 
-export default class extends Component {
+export default class extends React.Component {
 	
-	props: AnimatedTextProps;
+	//props: AnimatedTextProps;
 	/**
 	ease expected values:
 		["backInOut","backIn","backOut","bounceInOut","bounceIn","bounceOut",
