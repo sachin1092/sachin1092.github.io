@@ -5,6 +5,7 @@ import FaInfoCircle from 'react-icons/lib/fa/info-circle';
 import FaBriefcase from 'react-icons/lib/fa/briefcase';
 import FaCode from 'react-icons/lib/fa/code';
 import FaBank from 'react-icons/lib/fa/bank';
+import FaFileText from 'react-icons/lib/fa/file-text';
 import doon from 'right/doon.png'
 import pune from 'right/pune.png'
 import riverside from 'right/riverside.png'
@@ -40,13 +41,6 @@ export default class extends Component {
             overflow: 'scroll'
         };
 
-        const colored = {
-            color: '#87cefa',
-            fontStyle: 'italic',
-            borderBottom: '1px dotted #87cefa',
-            textDecoration: 'none'
-        };
-
         const dotted_line = {
             borderBottom: '1px dotted #fff',
             margin: '1px 50px 1px 50px'
@@ -68,19 +62,21 @@ export default class extends Component {
             marginBottom: '0'
         };
 
-        const loc_labels_style = {
-            marginLeft: '4vw',
-            marginRight:'4vw'
+        const tab_title_style = {
+            color: '#fff',
+            fontSize:'0.5em',
+            justifyContent: 'center'
         };
 
-        const loc_div_style = {
-            textAlign: 'justify',
-            width: '60px'
+        const about_style = {
+            color: '#fff',
+            fontSize: '0.7em',
+            marginLeft: '1vw',
+            marginRight: '1vw'
         };
 
-        const loc_img_style = {
-            display: 'block',
-            margin: '0 auto'
+        const colored_text = {
+            color: highlight_color
         };
 
         return (
@@ -120,22 +116,22 @@ export default class extends Component {
                     <TabList>
                         <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 0 ? 'thin solid #1f1f1f' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaInfoCircle size={35} color={'#ffffff'}/><br/><span style={{color: '#fff'}}>About</span>
+                                <FaInfoCircle size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>About</span>
                             </div>
                         </Tab>
                         <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 1 ? 'thin solid #1f1f1f' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaBriefcase size={35} color={'#ffffff'}/><br/><span style={{color: '#fff'}}>Work</span>
+                                <FaBriefcase size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>Work</span>
                             </div>
                         </Tab>
                         <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 2 ? 'thin solid #1f1f1f' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaBank size={35} color={'#ffffff'}/><br/><span style={{color: '#fff'}}>School</span>
+                                <FaBank size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>School</span>
                             </div>
                         </Tab>
                         <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 3 ? 'thin solid #1f1f1f' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaCode size={35} color={'#ffffff'}/><br/><span style={{color: '#fff'}}>Projects</span>
+                                <FaCode size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>Projects</span>
                             </div>
                         </Tab>
                     </TabList>
@@ -168,6 +164,23 @@ export default class extends Component {
                                 <figcaption style={{fontSize: '0.7em', color: '#ffffff'}}>Austin</figcaption>
                             </li>
                         </ul>
+
+                        <div style={about_style}>
+
+                            Born and brought up in <span style={colored_text}>Dehradun, India</span>. Finished my undergrad in Computer Engineering at <span style={colored_text}>Pune, India</span> and Masters in Computer Engineering at <span style={colored_text}>Riverside, CA</span>.
+                            Currently working at IBM Watson in Watson Applied Research Lab (<span style={colored_text}>Austin, TX</span>). <br/>
+                            <p>
+                                I love to explore and develop new stuff. Passionate about new technologies.
+                                If you want to chat up or discuss about anything.<br/>
+                                Feel free to shoot me an email at<br/>
+                                <span style={colored_text}>me 'at' sachinshinde.com</span>
+                            </p>
+
+                            Checkout my resume to know more about me.<br/><br/>
+                            <a href={"https://drive.google.com/file/d/0B9ONfV0200c2N05KMzdVVUdjUUk/view"} target={"_blank"}><FaFileText size={35} color={'#ffffff'}/><br/><span style={{color: '#fff', fontSize: '1em'}}>Resume</span></a>
+                        </div>
+
+
                     </TabPanel>
                     <TabPanel>
                         <h2>Any content 2</h2>
