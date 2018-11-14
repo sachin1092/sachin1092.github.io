@@ -44,7 +44,7 @@ export default class extends Component {
             textAlign: 'center',
             fontFamily: 'Lato',
             fontSize: '1.5em',
-            color: '#fff'
+            color: '#1f1f1f'
         };
 
         const colored = {
