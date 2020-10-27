@@ -1,5 +1,5 @@
 #root {
-	background: #1f1f1f;
+	background: #ffffff;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
@@ -15,13 +15,13 @@
 
 #right {
 	flex: 0 1 66.66666%;
-	border-left: 1px solid #fff;
+	border-left: 1px solid #1f1f1f;
 	border-top: none;
 }
 
 @media all and (max-width : 768px) {
     #root {
-    	background: #1f1f1f;
+    	background: #ffffff;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -33,7 +33,7 @@
 	}
 
 	#right {
-		border-top: 1px solid #fff;
+		border-top: 1px solid #1f1f1f;
 		border-left: none;
 		margin-top: 50px;
 	}

@@ -63,13 +63,13 @@ export default class extends Component {
         };
 
         const tab_title_style = {
-            color: '#fff',
+            color: '#1f1f1f',
             fontSize:'0.5em',
             justifyContent: 'center'
         };
 
         const about_style = {
-            color: '#fff',
+            color: '#1f1f1f',
             fontSize: '0.7em',
             marginLeft: '1vw',
             marginRight: '1vw'
@@ -114,24 +114,24 @@ export default class extends Component {
                 {/*<div style={dotted_line}/>*/}
                 <Tabs  selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                     <TabList>
-                        <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 0 ? 'thin solid #1f1f1f' : 'none'}}>
+                        <Tab style={{backgroundColor: '#fff', borderBottom: this.state.tabIndex === 0 ? 'thin solid #fff' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaInfoCircle size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>About</span>
+                                <FaInfoCircle size={35} color={'#1f1f1f'}/><br/><span style={tab_title_style}>About</span>
                             </div>
                         </Tab>
-                        <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 1 ? 'thin solid #1f1f1f' : 'none'}}>
+                        <Tab style={{backgroundColor: '#fff', borderBottom: this.state.tabIndex === 1 ? 'thin solid #fff' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaBriefcase size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>Work</span>
+                                <FaBriefcase size={35} color={'#1f1f1f'}/><br/><span style={tab_title_style}>Work</span>
                             </div>
                         </Tab>
-                        <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 2 ? 'thin solid #1f1f1f' : 'none'}}>
+                        <Tab style={{backgroundColor: '#fff', borderBottom: this.state.tabIndex === 2 ? 'thin solid #fff' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaBank size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>School</span>
+                                <FaBank size={35} color={'#1f1f1f'}/><br/><span style={tab_title_style}>School</span>
                             </div>
                         </Tab>
-                        <Tab style={{backgroundColor: '#1f1f1f', borderBottom: this.state.tabIndex === 3 ? 'thin solid #1f1f1f' : 'none'}}>
+                        <Tab style={{backgroundColor: '#fff', borderBottom: this.state.tabIndex === 3 ? 'thin solid #fff' : 'none'}}>
                             <div style={{width: '10vw'}}>
-                                <FaCode size={35} color={'#ffffff'}/><br/><span style={tab_title_style}>Projects</span>
+                                <FaCode size={35} color={'#1f1f1f'}/><br/><span style={tab_title_style}>Projects</span>
                             </div>
                         </Tab>
                     </TabList>
@@ -140,28 +140,28 @@ export default class extends Component {
                         <ul className="list-unstyled list-inline text-center">
                             <li>
                                 <img src={doon} alt="Dehradun" style={img_style}/>
-                                <figcaption style={{fontSize: '0.7em', color: '#ffffff'}}>Dehradun</figcaption>
+                                <figcaption style={{fontSize: '0.7em', color: '#1f1f1f'}}>Dehradun</figcaption>
                             </li>
                             <li>
-                                <FaPlane size={35} color={'#ffffff'} transform="rotate(0 0 0)" style={svg_style}/>
+                                <FaPlane size={35} color={'#1f1f1f'} transform="rotate(0 0 0)" style={svg_style}/>
                             </li>
                             <li>
                                 <img src={pune} alt="Pune" style={img_style}/>
-                                <figcaption style={{fontSize: '0.7em', color: '#ffffff'}}>Pune</figcaption>
+                                <figcaption style={{fontSize: '0.7em', color: '#1f1f1f'}}>Pune</figcaption>
                             </li>
                             <li>
-                                <FaPlane size={35} color={'#ffffff'} transform="rotate(90 0 0)" style={svg_style}/>
+                                <FaPlane size={35} color={'#1f1f1f'} transform="rotate(90 0 0)" style={svg_style}/>
                             </li>
                             <li>
                                 <img src={riverside} alt="Riverside" style={img_style}/>
-                                <figcaption style={{fontSize: '0.7em', color: '#ffffff'}}>Riverside</figcaption>
+                                <figcaption style={{fontSize: '0.7em', color: '#1f1f1f'}}>Riverside</figcaption>
                             </li>
                             <li>
-                                <FaPlane size={35} color={'#ffffff'} transform="rotate(0 0 0)" style={svg_style}/>
+                                <FaPlane size={35} color={'#1f1f1f'} transform="rotate(0 0 0)" style={svg_style}/>
                             </li>
                             <li>
                                 <img src={austin} alt="Austin" style={img_style}/>
-                                <figcaption style={{fontSize: '0.7em', color: '#ffffff'}}>Austin</figcaption>
+                                <figcaption style={{fontSize: '0.7em', color: '#1f1f1f'}}>Austin</figcaption>
                             </li>
                         </ul>
 
@@ -177,7 +177,7 @@ export default class extends Component {
                             </p>
 
                             Checkout my resume to know more about me.<br/><br/>
-                            <a href={"https://drive.google.com/file/d/0B9ONfV0200c2N05KMzdVVUdjUUk/view"} target={"_blank"}><FaFileText size={35} color={'#ffffff'}/><br/><span style={{color: '#fff', fontSize: '1em'}}>Resume</span></a>
+                            <a href={"https://drive.google.com/file/d/0B9ONfV0200c2N05KMzdVVUdjUUk/view"} target={"_blank"}><FaFileText size={35} color={'#1f1f1f'}/><br/><span style={{color: '#1f1f1f', fontSize: '1em'}}>Resume</span></a>
                         </div>
 
 
